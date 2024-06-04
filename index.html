@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Colloquium in Digital Cultural Heritage. Kompakkt.</title>
+    <title>IIIF Annual Conference Lightning Talk. Kompakkt.</title>
 
     <meta name="description"
           content="Presentation: Kompakkt loading iiif manifests">
@@ -48,38 +48,81 @@
             <br>
             <p>... 'cause the world is multidimensional</p>
             <br>
-            <h3>Kompakkt loading iiif manifests</h3>
-            <h4>Small introduction of our current implementation state</h4>
+            <h4>Kompakkt loading IIIF 3D Manifests</h4>
+            <p>Demo implementation with Babylon.js</p>
+            <p><i>(or: How we secretly tidy up behind the curtains)</i></p>
             <br>
             <p>
                 <small>
-                    Presented by Lukas Günther & Zoe Schubert<br>
-                    TIB Hannover
+                    Presented by Zoe Schubert<br>
+                    Berlin State Library | TIB - Leibniz Information Centre for Science & Tech.
                 </small>
             </p>
         </section>
 
-        <section data-background="assets/img/klips2.png">
+        <section>
             <h2>Overview</h2>
             <br>
             <br>
             <div class="captioned-image-row">
                 <div>
-                    Basic Model in Scene
+                    (Semantic) Kompakkt
                     <img src="assets/img/alice_entry.png">
                 </div>
                 <div>
-                    Transformation: Rotation
-                    <img src="assets/video/catworks.gif">
+                    Loading 3D Manifests
+                    <img src="assets/img/Bildschirmfoto 2024-06-03 um 23.56.07.png">
                 </div>
                 <div>
-                    Transformation: Positioning
+                    Unexpected Benefits
                     <img src="assets/video/cat_fly.gif">
                 </div>
             </div>
         </section>
 
         <section>
+
+            <section data-background="assets/img/alice_entry.png">
+                <br><br><br><br><br><br><br><br><br>
+                <h2>(Semantic) Kompakkt</h2>
+            </section>
+
+            <section>
+                <video class="stretch" data-autoplay>
+                    <source data-src="assets/video/Kompakkt-Intro.mp4" type="video/mp4"/>
+                </video>
+            </section>
+
+            <section>
+                <video class="stretch" data-autoplay>
+                    <source data-src="assets/video/annotations-intro.mp4" type="video/mp4"/>
+                </video>
+            </section>
+
+            <section>
+                <video class="stretch" data-autoplay>
+                    <source data-src="assets/video/external-usage.mp4" type="video/mp4"/>
+                </video>
+            </section>
+            <section>
+                <img src="assets/img/Semantic-Kompakkt.png">
+            </section>
+
+            <section data-background="assets/img/Sematic-Kompakkt.png">
+            </section>
+
+            <section data-background="assets/img/Tech-Kompakkt.png">
+                <h1>Code Base</h1>
+                <br><br><br><br><br><br><br><br><br>
+            </section>
+
+
+        </section>
+        <section>
+            <section data-background="assets/img/Bildschirmfoto 2024-04-17 um 09.52.03.png">
+                <br><br><br><br><br><br><br><br><br>
+                <h2>Loading 3D Manifests</h2>
+            </section>
 
             <section data-background="assets/img/alice_entry.png">
                 <br><br><br><br><br><br><br><br><br>
@@ -135,145 +178,27 @@
             </section>
             <section data-background="assets/img/Bildschirmfoto 2024-04-16 um 22.48.29.png">
             </section>
+
         </section>
-
-        <section>
-
-            <section data-background="assets/video/catworks.gif">
-                <h2>Transformation: Rotation</h2>
-            </section>
-
-            <section>
-                <h2>Babylon.js & Kompakkt</h2>
-            </section>
-
-            <section>
-                <h2>Babylon.js <br>
-                    Rotation Conventions</h2>
-            </section>
-            <section>
-                <h4>Mesh rotation: The most straight forward method to change the orientation of a mesh is the rotation
-                    property</h4>
-                <ul>
-                    <li>Where is the center of rotation?
-                    </li>
-                    <li>Are they applied in a clockwise or counter clockwise direction?
-                    </li>
-                    <li>What is the frame of reference?
-                    </li>
-                    <li>In which order are they applied?
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h4>Mesh rotation: The most straight forward method to change the orientation of a mesh is the rotation
-                    property</h4>
-                <ul>
-                    <li>On creation, the center of rotation is the local origin of the mesh.
-                    </li>
-                    <li>The center of rotation is the
-                        local origin of the mesh and rotations are always counter clockwise when looking in the positive
-                        direction of the stated axis.
-                    </li>
-                    <li>In Babylon.js the rotation frame of reference is in the local
-                        space of the mesh being rotated.
-                    </li>
-                    <li>It makes no difference the resulting orientation will always
-                        be the same.
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h4>Rotation Conventions</h4>
-                <ul>
-                    <li>Rotation in 3D space is always tricky. The order in which rotations are applied and the frame of
-                        reference used changes the final orientation of a mesh. There is a range of conventions for
-                        applying rotations in 3D modelling.
-                    </li>
-                    <li>There are several methods of achieving rotations within Babylon.js all of which use a particular
-                        convention.
-                    </li>
-                    <li>Euler Angles</li>
-                    <li>Euler Angles to Quaternions</li>
-                </ul>
-            </section>
-
-
-            <section data-background="assets/video/bigcat.gif">
-            </section>
-            <section data-background="assets/img/Bildschirmfoto 2024-04-16 um 23.27.40.png">
-            </section>
-        </section>
-
         <section>
 
             <section data-background="assets/video/cat_fly.gif">
-                <h2>Transformation: Positioning</h2>
+                <br><br><br><br><br><br><br><br><br>
+                <h2>Unexpected Benefits</h2>
             </section>
 
-            <section>
-                <h2>Babylon.js & Kompakkt</h2>
+            <section data-background="assets/img/klips2.png">
+            <h2>Past</h2>
+                <br>
+                <br>
+                <div class="captioned-image-row">
+                    <div>
+                        <img src="assets/img/kompakkt-logo.png">
+                    </div>
+
+                </div>
             </section>
 
-            <section>
-                <h2>Babylon.js <br>
-                    Coordinate Transformation</h2>
-            </section>
-            <section>
-                <h4>Rotation Conventions</h4>
-                <ul>
-                    <li>Usually, within Babylon.js, positioning, rotating and scaling a mesh changes its world matrix
-                        only and the vertex position data of a mesh is left unchanged.
-                    </li>
-                    <li>In certain situations you might be interested in applying a transform (position, rotation,
-                        scale) directly to the mesh vertices and leave world matrix unchanged. This is called baking
-                        and, of course, changes the center of transformation of the mesh
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h4>Coordinate Transformation: local space and world matrix<br><br>
-                    Positioning</h4>
-                <img src="assets/img/Bildschirmfoto 2024-04-16 um 23.45.26.png">
-            </section>
-            <section>
-                <h4>Coordinate Transformation: local space and world matrix<br><br>
-                    Translate</h4>
-                <img src="assets/img/Bildschirmfoto 2024-04-16 um 23.47.58.png">
-            </section>
-
-            <section data-background="assets/video/cat-wait.gif">
-                <h6><br><br>And Kompakkt?</h6>
-            </section>
-
-            <section data-background="assets/img/Bildschirmfoto 2024-04-16 um 22.47.14.png">
-            </section>
-
-            <section data-background="assets/img/Bildschirmfoto 2024-04-16 um 22.48.14.png">
-            </section>
-            <section data-background="assets/img/Bildschirmfoto 2024-04-16 um 22.45.20.png">
-            </section>
-            <section data-background="assets/img/Bildschirmfoto 2024-04-16 um 22.45.29.png">
-            </section>
-
-            <section>
-                <h4>How we do it so far</h4>
-                <ul>
-                    <li>Calculate the center of the visible mesh(es)</li>
-                    <li>Create an invisible mesh as center and set it and its pivot point to the calculated center of
-                        the mesh
-                    </li>
-                    <li>Use the invisible mesh as parent, do the transformations, apply the new position to the
-                        children, destroy the parent
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <img data-src="assets/video/cat_long.gif">
-            </section>
-        </section>
-
-        <section>
             <section data-background="assets/img/aufsicht.JPG">
                 <h2>Future</h2>
                 <br>
@@ -285,8 +210,30 @@
 
                 </div>
             </section>
+
         </section>
 
+        <section>
+            <section data-background="assets/img/title_light.png">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3>Many thanks, </h3>
+                 <h4>  especially to our users and the IIIF 3D TSG!</h4>
+                    <br>
+                    <h4>We are happy about any collaboration</h4>
+                <p>
+                    <br>
+                    <small>
+                        kompakkt.de<br>
+                        info@kompakkt.de<br>
+                        https://kompakkt.github.io/Info/<br>
+                    </small>
+                </p>
+            </section>
+
+        </section>
 
     </div>
 </div>
